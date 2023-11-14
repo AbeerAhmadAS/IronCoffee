@@ -5,7 +5,31 @@
         <a
           routerLink="/CoffeList/SingleCoffee/:id"
           routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: false }"
+          [routerLinkActiveOptions]="{ exact: true }"
           ></a >
       </div>
       </nav>
+  
+
+
+      <nav>
+
+        <div class="nav-link">
+          <a
+            routerLink="/CoffeList/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ></a >
+        </div>
+        </nav>
+
+        <nav>
+
+          <div class="nav-link">
+            <a
+              routerLink="/CreateCoffee/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ></a >
+          </div>
+          </nav>

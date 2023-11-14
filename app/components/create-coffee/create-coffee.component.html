@@ -1,6 +1,6 @@
 <div class="posted">
   <h2>Create a New Coffee</h2>
-  <form class="coffeForm" (ngSubmit)="postCoffee()" [formGroup]="body">
+  <form class="coffeForm" (ngSubmit)="onSubmit()" [formGroup]="registerForm">
     <mat-form-field class="coffeeList">
       <mat-label>Name:</mat-label><br />
       <input
@@ -99,7 +99,7 @@
         Contributed Error
       </p>
     </mat-form-field>
-    <button type="submit" [disabled]="body.invalid" mat-raised-button color="">
+    <button type="submit" [disabled]="registerForm.invalid" mat-raised-button color="">
       create coffee
     </button>
   </form>

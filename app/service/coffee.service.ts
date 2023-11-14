@@ -21,7 +21,7 @@ export class CoffeeService {
     return this.http.get<Coffee>(`${this.API_URL}/${id}`);
   }
   
-  postCoffee(body: FormGroup): Observable<any> {
+  postCoffee(body: any): Observable<any> {
     return this.http.post<any>(`${this.API_URL}/new`, body);
   }
 }

@@ -7,7 +7,7 @@ import { CoffeeService } from 'src/app/service/coffee.service';
   styleUrls: ['./create-coffee.component.css'],
 })
 export class CreateCoffeeComponent implements OnInit {
-  body: FormGroup;
+  registerForm: FormGroup;
   nameInput: FormControl;
   taglineInput: FormControl;
   descriptionInput: FormControl;
@@ -23,9 +23,12 @@ export class CreateCoffeeComponent implements OnInit {
     this.first_roastedInput = new FormControl('', Validators.required);
     this.roaster_tipsInput = new FormControl('', Validators.required);
     this.strength_levelInput = new FormControl('', Validators.required);
-    this.contributed_byInput = new FormControl('', Validators.required);
+    this.contributed_byInput = new FormControl('', [
+      Validators.required,
+      Validators.min(0),
+    ]);
 
-    this.body = new FormGroup({
+    this.registerForm = new FormGroup({
       name: this.nameInput,
       tagline: this.taglineInput,
       description: this.descriptionInput,
@@ -34,17 +37,28 @@ export class CreateCoffeeComponent implements OnInit {
       strengthLevel: this.strength_levelInput,
       contributedBy: this.contributed_byInput,
     });
-  }
+ 
 
-  postCoffee(): void {
-    this.coffeeservice.postCoffee(this.body).subscribe({
-      next: (data) => {
-        alert('coffee posted successfully');
-      },
-      error: (e) => {
-        console.log(e);
-      },
-    });
   }
-  ngOnInit(): void {}
-}
+  ngOnInit(): void {
+    
+  }
+    onSubmit() {
+      if (this.registerForm.valid) {
+        const body = this.registerForm.value;
+  
+        this.coffeeservice.postCoffee(body).subscribe(
+          (response) => {
+            console.log('Coffee created:', response);
+            alert("THE COFFEE IS CREATED")
+  
+            this.registerForm.reset();
+            window.location.reload();
+          },
+          (error) => {
+            console.error('Error creating coffee:', error);
+          }
+        );
+      }
+    }
+  }

@@ -5,20 +5,30 @@ import { ListComponent } from './components/list/list.component';
 import { Coffee } from './model/model';
 import { CoffeitemComponent } from './components/coffeitem/coffeitem.component';
 import { HomeComponent } from './components/home/home.component';
+import { CreateCoffeeComponent } from './components/create-coffee/create-coffee.component';
 // import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
 
 const routes: Routes = [
-  // {
-  //   path: "HomePage",
-  //   component: HomeComponent
-  // },
+   {
+    path: "",
+    component: HomeComponent
+  },
 
   {
     path: "CoffeList",
     component: ListComponent
   },
   { path: 'CoffeList/SingleCoffee/:id',
-   component: CoffeitemComponent }
+   component: CoffeitemComponent },
+   {
+    path: "CreateCoffee",
+    component: CreateCoffeeComponent
+  }
+
+  // {
+  //   path: "RandomCoffee",
+  //   component: ListComponent
+  // }
 
   // {
   //   path: "**", // 404 Page
