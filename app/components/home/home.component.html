@@ -1,11 +1,43 @@
-<img src="assets\images\coffees.jpg" alt="All coffee" class="imged" />
-<h1><a [routerLink]="['/CoffeList/']">All Coffees</a></h1>    
+<!-- <app-filter></app-filter> -->
+<div class="header">
+    <img width="100" height="50" src="assets\images\icons8-coffee-beans-50.png" alt="coffee-beans---v2"/>
+    <div class="search-container">
+        <label for="searchInput" class="search-label">Search Coffees:</label>
+        <input type="text" [routerLink]="['/Coffees']" class="search-input">
+        </div>
+</div> 
+<div class="img-container">
+    <img id="img-back" src="assets\images\photo_2023-11-14_14-46-36.jpg" alt="landing picture" width="100%" />
+</div>
 
-<p>------------------------------------------------------------------------------</p>
-<img src="assets\images\random-coffee.jpg" alt="Random Coffee" class="imged"/>
-<h1>Random Coffee</h1>
-<p>------------------------------------------------------------------------------</p>
-<img src="assets\images\new-coffee.jpg" alt="new coffee"  class="imged"/>
-<h1><a [routerLink]="['/CreateCoffee/']">New Coffee</a></h1>
-<p>--------------------------------------------------------------------------------</p>
 
+
+<section id="section-1">
+    
+
+    <div class="external-div">
+      <div class="internal-div">
+        <img width="100" height="100" src="https://img.icons8.com/external-justicon-lineal-color-justicon/100/external-hot-coffee-coffee-shop-justicon-lineal-color-justicon-2.png" alt="external-hot-coffee-coffee-shop-justicon-lineal-color-justicon-2"/>
+        <h2><a [routerLink]="['/CoffeList/']">All Coffees</a></h2>
+        <p>
+            In IronCoffee you can enjoy a different menu of coffee that suits all tastes
+        </p>
+      </div>
+
+      <div class="internal-div">
+        <img width="100" height="100" src="https://img.icons8.com/office/100/coffee-to-go.png" alt="coffee-to-go"/>
+        <h2><a [routerLink]="['/RandomCoffee/']">Random Coffee</a></h2>
+        <p>
+            Start your day with a cup of coffee IronCoffee whichever type you prefer, cold or hot
+        </p>
+      </div>
+
+      <div class="internal-div">
+        <img width="100" height="100" src="https://img.icons8.com/plasticine/100/coffee-bag.png" alt="coffee-bag"/>
+        <h2><a [routerLink]="['/CreateCoffee/']">New Coffee</a></h2>
+        <p>
+            Start by creating the coffee you want and do not hesitate
+        </p> ​
+      </div>
+    </div>
+  </section>

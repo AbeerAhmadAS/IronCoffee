@@ -1,0 +1,13 @@
+
+
+
+<div *ngIf="randomCoffee" class="random-coffee-container">
+    <h2>{{ randomCoffee.name }}</h2>
+    <img [src]="randomCoffee.image_url" alt="{{ randomCoffee.name }} Image" class="random-coffee-image">
+    
+    <p><strong>Tagline:</strong> {{ randomCoffee.tagline }}</p>
+    <p><strong>First Roasted:</strong> {{ randomCoffee.first_roasted }}</p>
+    <p><strong>Strength Level:</strong> {{ randomCoffee.strength_level }}</p>
+    <p><strong>Description:</strong> {{ randomCoffee.description }}</p>
+    <p><strong>Contributed By:</strong> {{ randomCoffee.contributed_by }}</p>
+  </div>

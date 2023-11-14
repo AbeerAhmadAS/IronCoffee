@@ -1,0 +1,39 @@
+.container{
+  text-align: center;
+  margin-left: 30px;
+}
+
+  
+  .image {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 10px; 
+    margin: 10px; 
+  }
+
+ 
+
+  .search-container {
+    display: block;
+    margin: 0 auto 100px ;
+    padding: 0px;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60%;
+    
+  }
+  
+  .search-label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
