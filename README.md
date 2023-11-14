@@ -72,6 +72,10 @@ The API (server) for our app is hosted on Heroku, and the root URL is: [https://
    - Bonus feature: Search for coffees by name.
    - Input for users to search for coffees.
 
+### Use Case Diagram
+
+![Use Case Diagram]([ntitled (6).png](https://github.com/AbeerAhmadAS/IronCoffee/blob/3d0a0ccbd70caf55061a8b2cf53256733802dd9e/Untitled%20(6).png))
+
 ### Installation
 
 To run the project locally, follow these steps:
@@ -90,7 +94,6 @@ Visit [http://localhost:4200/](http://localhost:4200/) in your browser to explor
 - [ThurayaAlfahmi](https://github.com/ThurayaAlfahmi)
 - [YumnaAlansari](https://github.com/YumnaAlansari)
 - [AbeerAhmadAS](https://github.com/AbeerAhmadAS)
-
 
 ## Acknowledgments
 
