@@ -1,3 +1,6 @@
+.center-image {
+  text-align: center; /* Center-aligns the image */
+}
 .posted {
   position: relative;
   z-index: 1;
