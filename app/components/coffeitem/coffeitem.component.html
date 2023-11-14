@@ -1,0 +1,22 @@
+
+<div class="center-image">
+  <img src="assets/images/header.png" alt="Header Image">
+</div>
+
+<div class="coffee-item">
+  <h3>{{ coffeeList?.name }}
+    <h3><strong><img [src]="coffeeList?.image_url" alt="Coffee Image"></strong></h3>  </h3>
+  <div class="details">
+    <ul>
+    
+  
+      <li><strong>Tagline:</strong> {{ coffeeList?.tagline }}</li>
+      <li><strong>Description:</strong> {{ coffeeList?.description }}</li>
+      <li><strong>First Roasted:</strong> {{ coffeeList?.first_roasted }}</li>
+      <li><strong>Roaster Tips:</strong> {{ coffeeList?.roaster_tips }}</li>
+      <li><strong>Strength Level:</strong> {{ coffeeList?.strength_level }}</li>
+      <li><strong>Contributed By:</strong> {{ coffeeList?.contributed_by }}</li>
+
+    </ul>
+  </div>
+</div>

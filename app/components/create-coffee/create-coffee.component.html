@@ -1,0 +1,106 @@
+<div class="posted">
+  <h2>Create a New Coffee</h2>
+  <form class="coffeForm" (ngSubmit)="postCoffee()" [formGroup]="body">
+    <mat-form-field class="coffeeList">
+      <mat-label>Name:</mat-label><br />
+      <input
+        type="text"
+        matInput
+        placeholder="Write the coffee name"
+        formControlName="name"
+      />
+      <p class="error-msg" *ngIf="nameInput.invalid && nameInput.touched">
+        Name Error
+      </p>
+    </mat-form-field>
+    <mat-form-field class="coffeeList">
+      <mat-label>Tagline:</mat-label><br />
+      <input
+        matInput
+        type="text"
+        placeholder="Write the coffee tagline"
+        formControlName="tagline"
+      />
+      <p class="error-msg" *ngIf="taglineInput.invalid && taglineInput.touched">
+        Tagline Error
+      </p>
+    </mat-form-field>
+    <mat-form-field class="coffeeList">
+      <mat-label>Description:</mat-label><br />
+      <textarea
+        matInput
+        placeholder="Write the coffee description"
+        formControlName="description"
+      ></textarea>
+      <p
+        class="error-msg"
+        *ngIf="descriptionInput.invalid && descriptionInput.touched"
+      >
+        Description Error
+      </p>
+    </mat-form-field>
+    <mat-form-field class="coffeeList">
+      <mat-label>First Roasted:</mat-label><br />
+      <input
+        matInput
+        type="text"
+        placeholder="Write the coffee first roasted"
+        formControlName="firstRoasted"
+      />
+      <p
+        class="error-msg"
+        *ngIf="first_roastedInput.invalid && first_roastedInput.touched"
+      >
+        First Roasted Error
+      </p>
+    </mat-form-field>
+    <mat-form-field class="coffeeList">
+      <mat-label>Roaster Tips:</mat-label><br />
+      <textarea
+        matInput
+        type="text"
+        placeholder="Write the coffee roaster tips"
+        formControlName="roasterTips"
+      ></textarea>
+      <p
+        class="error-msg"
+        *ngIf="roaster_tipsInput.invalid && roaster_tipsInput.touched"
+      >
+        Roaster Tips Error
+      </p>
+    </mat-form-field>
+    <mat-form-field class="coffeeList">
+      <mat-label>Strength Level:</mat-label><br />
+      <input
+        matInput
+        type="number"
+        placeholder="Write the  strength level of coffee "
+        formControlName="strengthLevel"
+      />
+      <p
+        class="error-msg"
+        *ngIf="strength_levelInput.invalid && strength_levelInput.touched"
+      >
+        Strength Level Error
+      </p>
+    </mat-form-field>
+    <mat-form-field class="coffeeList">
+      <mat-label>Contributed By:</mat-label><br />
+      <input
+        type="text"
+        matInput
+        placeholder="Write the contributed by of coffee "
+        formControlName="contributedBy"
+      />
+      <p
+        class="error-msg"
+        *ngIf="contributed_byInput.invalid && contributed_byInput.touched"
+      >
+        Contributed Error
+      </p>
+    </mat-form-field>
+    <button type="submit" [disabled]="body.invalid" mat-raised-button color="">
+      create coffee
+    </button>
+  </form>
+</div>

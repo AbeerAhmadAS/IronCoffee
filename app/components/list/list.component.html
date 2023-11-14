@@ -1,0 +1,16 @@
+ <div class="center-image">
+  <img src="assets/images/header.png" alt="Header Image">
+</div>
+
+<section class="gallery">
+  <div class="picture" *ngFor="let coffeeItem of coffee">
+    <a [routerLink]="['/CoffeList/SingleCoffee/' + coffeeItem._id]">
+      <div class="coffee-container">
+        <img [src]="coffeeItem.image_url" alt="Coffee Image">
+        <h2>{{ coffeeItem.name }}</h2>
+        <p>{{ coffeeItem.tagline }}</p>
+        <p>Contributed By: {{ coffeeItem.contributed_by }}</p>
+      </div>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+.center-image {
+  text-align: center; /* Center-aligns the image */
+}
+
+.center-image img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: auto; /* Allow height to adjust according to the width to maintain aspect ratio */
+}
+
+.coffee-container {
+  width: 70%; /* Set the container width to match the image width */
+  max-width: 100%; /* Ensure it doesn't exceed its original size */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px auto; /* Center the container horizontally */
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  text-align: left; /* Center-align content */
+}
+
+.coffee-container img {
+  text-align: center;
+  width: 40%; /* Set the image width to 100% of its container */
+  max-width: 40%; /* Ensure the image doesn't exceed its original size */
+}
+
+.coffee-container h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.coffee-container p {
+  margin-bottom: 5px;
+}
+
+.coffee-container button {
+  padding: 5px 10px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.center-image {
+    text-align: center; /* Center-aligns the image */
+  }
+  
+  .center-image img {
+    display: block; 
+    margin: 0 auto; 
+    width: 70%;
+    height: auto; /* Allow height to adjust according to the width to maintain aspect ratio */
+  }
+  
+  .coffee-item {
+    width: 70%; /* Set the container width to match the image width */
+    max-width: 100%; /* Ensure it doesn't exceed its original size */
+    padding: 20px;
+    margin: 10px auto; /* Center the container horizontally */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Rest of your existing styles for .coffee-item and its children */
+  .coffee-item img {
+    max-width: 30%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below image */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 2px solid #ddd; /* Example: Adding a border */
+    border-radius: 5px; /* Example: Adding rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Example: Adding a subtle shadow */
+  }
