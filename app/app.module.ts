@@ -14,6 +14,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from "@angular/forms";
+import { RandomCoffeeComponent } from './components/random-coffee/random-coffee.component';
+import { FilterComponent } from './components/filter/filter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { ReactiveFormsModule } from "@angular/forms";
     HomeComponent,
     NavbarComponent,
     CreateCoffeeComponent,
+    RandomCoffeeComponent,
+    FilterComponent,
 
 
   ],

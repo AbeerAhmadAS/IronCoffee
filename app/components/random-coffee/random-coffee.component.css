@@ -1,0 +1,11 @@
+.random-coffee-container {
+    text-align: center;
+  }
+  
+  .random-coffee-image {
+    max-width: 800px;
+    max-height: 800px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  

@@ -9,7 +9,14 @@
           ></a >
       </div>
       </nav>
-  
+      <div class="nav-link">
+        <a
+          routerLink="/Coffees/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ></a >
+      </div>
+      
 
 
       <nav>
@@ -33,3 +40,14 @@
               ></a >
           </div>
           </nav>
+
+          <nav>
+
+            <div class="nav-link">
+              <a
+                routerLink="/RandomCoffee/"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                ></a >
+            </div>
+            </nav>
