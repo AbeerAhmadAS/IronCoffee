@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { CoffeitemComponent } from './components/coffeitem/coffeitem.component';
@@ -37,7 +38,9 @@ import { FilterComponent } from './components/filter/filter.component';
     MatButtonModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
