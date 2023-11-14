@@ -74,7 +74,7 @@ The API (server) for our app is hosted on Heroku, and the root URL is: [https://
 
 ### Use Case Diagram
 
-![Use Case Diagram]([ntitled (6).png](https://github.com/AbeerAhmadAS/IronCoffee/blob/3d0a0ccbd70caf55061a8b2cf53256733802dd9e/Untitled%20(6).png))
+![Use Case Diagram](./path/to/your/use_case_diagram.png)
 
 ### Installation
 
