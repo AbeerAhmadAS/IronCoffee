@@ -2,6 +2,14 @@
   <img src="assets/images/header.png" alt="Header Image">
 </div>
 
+<div class="search-container">
+  <label for="searchInput" class="search-label">Search Coffees:</label>
+  <input type="text" id="searchInput" [(ngModel)]="searchQuery" (input)="onSearch()" class="search-input">
+</div>
+
+<div *ngFor="let coffee of coffee" class="container"> </div>
+
+
 <section class="gallery">
   <div class="picture" *ngFor="let coffeeItem of coffee">
     <a [routerLink]="['/CoffeList/SingleCoffee/' + coffeeItem._id]">
