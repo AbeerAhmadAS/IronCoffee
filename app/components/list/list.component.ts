@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Coffee } from 'src/app/model/model';
 import { CoffeeService } from 'src/app/service/coffee.service';
 import { Router } from '@angular/router';
+import { Subject } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-list',
@@ -10,7 +12,10 @@ import { Router } from '@angular/router';
 })
 export class ListComponent implements OnInit {
   coffee: Coffee[] = [];
+  searchQuery: string = '';
+  private searchSubject = new Subject<string>();
 
+  
   constructor(private coffeeService: CoffeeService, private router: Router) {}
 
   ngOnInit(): void {
@@ -23,9 +28,20 @@ export class ListComponent implements OnInit {
         console.log(error); 
       }
     );
+
+      this.searchSubject.pipe(
+      switchMap((query: string) => this.coffeeService.searchCoffees(query))
+    ).subscribe((result: Coffee[]) => {
+      this.coffee = result;
+    });
   }
 
   goToCoffee(id: number) {
     this.router.navigate(['/coffee', id]);
+  }
+
+  
+  onSearch(): void {
+    this.searchSubject.next(this.searchQuery);
   }
 }
