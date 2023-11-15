@@ -7,7 +7,7 @@ import { CoffeitemComponent } from './components/coffeitem/coffeitem.component';
 import { HomeComponent } from './components/home/home.component';
 import { CreateCoffeeComponent } from './components/create-coffee/create-coffee.component';
 import { RandomCoffeeComponent } from './components/random-coffee/random-coffee.component';
-import { FilterComponent } from './components/filter/filter.component';
+// import { FilterComponent } from './components/filter/filter.component';
 // import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
 
 const routes: Routes = [
@@ -29,11 +29,11 @@ const routes: Routes = [
   {
     path: "RandomCoffee",
     component: RandomCoffeeComponent
-  },
-  {
-    path: "Coffees",
-    component: FilterComponent
   }
+  // {
+  //   path: "Coffees",
+  //   component: FilterComponent
+  // }
 
   // {
   //   path: "RandomCoffee",
